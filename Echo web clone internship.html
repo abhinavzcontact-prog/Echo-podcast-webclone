@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19006c58f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Echo web clone internship.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="aside-navbar">
+            <div class="aside-navbar-tit">
+                <div class="aside-navbar-logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-broadcast aside-navbar-logo" viewBox="0 0 16 16">
+                        <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                    </svg>
+                </div>
+                <span class="aside-navbar-title">Echo</span>
+            </div>
+            <div class="aside-navbar-box">
+                <button class="button-container active" data-page="home">
+                    <i class="fa-solid fa-house button-logo"></i>
+                    <span class="button-text">Home</span>
+                </button>
+                <button class="button-container" data-page="explore">
+                    <i class="fa-regular fa-compass button-logo"></i>
+                    <span class="button-text">Explore</span>
+                </button>
+                <button class="button-container" data-page="library">
+                    <i class="fa-solid fa-book button-logo"></i>
+                    <span class="button-text">Library</span>
+                </button>
+                <button class="button-container" data-page="settings">
+                    <i class="fa-solid fa-gear button-logo"></i>
+                    <span class="button-text">Settings</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="secondary-page">
+            <div id="home-page">
+                <div class="daily-mix-container">
+                    <div class="daily-mix-container-text">
+                        <div class="daily-mix-box">
+                            <div class="daily-mix-dot"></div>
+                            <span class="daily-mix-text">Daily Mix</span>
+                        </div>
+                        <h1>The Daily Tech</h1>
+                        <div class="daily-mix-desc">
+                            <p>Sarah Chen</p>
+                            <p>Your daily dose of technology news, trends, and insights from Silicon Valley and beyond.</p>
+                        </div>
+                        <div class="daily-mix-buttons">
+                            <button class="listen-button">
+                                <i class="fa-solid fa-play"></i>
+                                Listen Now
+                            </button>
+                            <button class="show-button">
+                                View Show
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-container">
+                    <div class="trending-container-text">
+                        <h1 class="section-heading">Trending Now</h1>
+                        <a href="#" class="see-all">
+                            See all <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="trending-card-container">
+                        <a class="trending-card" href="#daily-tech-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">The Daily Tech</div>
+                            <p>Sarah Chen</p>
+                        </a>
+                        <a class="trending-card mystery-files-card" href="#mystery-files-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Mystery Files</div>
+                            <p>Detective Audio</p>
+                        </a>
+                        <a class="trending-card" href="#laugh-track-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Laugh Track</div>
+                            <p>Comedy Central</p>
+                        </a>
+                        <a class="trending-card" href="#science-unlocked-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Science Unlocked</div>
+                            <p>Dr. Maya Williams</p>
+                        </a>
+                        <a class="trending-card" href="#morning-briefing-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Morning Briefing</div>
+                            <p>Global News Network</p>
+                        </a>
+                        <a class="trending-card" href="#startup-stories-page" style="text-decoration:none;">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Startup Stories</div>
+                            <p>Venture Voice</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="continue-container">
+                    <div class="continue-title">
+                        <h1>Continue Listening</h1>
+                    </div>
+                    <div class="continue-cards">
+                        <div class="continue-card active-card">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop">
+                            <div class="continue-card-text">
+                                <div class="continue-name active-name">
+                                    The AI Revolution: What's Next?
+                                </div>
+                                <p>The Daily Tech</p>
+                                <div class="continue-info">
+                                    <span>2024-01-15</span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>45:32</span>
+                                </div>
+                            </div>
+                            <div class="playing-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                        </div>
+                        <div class="continue-card">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop">
+                            <div class="continue-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="continue-card-text">
+                                <div class="continue-name">
+                                    Apple Vision Pro: First Impressions
+                                </div>
+                                <p>The Daily Tech</p>
+                                <div class="continue-info">
+                                    <span>2024-01-12</span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>38:15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="continue-card">
+                            <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=400&h=400&fit=crop">
+                            <div class="continue-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="continue-card-text">
+                                <div class="continue-name">
+                                    The Disappearance of Flight 370
+                                </div>
+                                <p>Mystery Files</p>
+                                <div class="continue-info">
+                                    <span>2024-01-14</span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>52:48</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="continue-card">
+                            <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&h=400&fit=crop">
+                            <div class="continue-play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="continue-card-text">
+                                <div class="continue-name">
+                                    Comedy Gold: Best of 2023
+                                </div>
+                                <p>Laugh Track</p>
+                                <div class="continue-info">
+                                    <span>2024-01-10</span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>01:02:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="New-releases-container just-marg">
+                    <div class="trending-container-text">
+                        <h1 class="section-heading">New Releases</h1>
+                        <a href="#" class="see-all">
+                            See all <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="trending-card-container">
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Laugh Track</div>
+                            <p>Comedy Central</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Science Unlocked</div>
+                            <p>Dr. Maya Williams</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Morning Briefing</div>
+                            <p>Global News Network</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Startup Stories</div>
+                            <p>Venture Voice</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Mindful Moments</div>
+                            <p>Wellness Weekly</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="trending-image">
+                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=400&fit=crop" />
+                                <div class="trending-play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="trending-title">Future Forward</div>
+                            <p>Innovation Lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-page mt-3">
+                <h1>Explore</h1>
+                <div class="explore-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search podcasts, episodes, or hosts...">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <h2 id="resultCount"></h2>
+                    <div class="search-result-container" id="searchResultContainer"></div>
+                </div>
+                <h2>Browse Categories</h2>
+                <div class="category-container">
+                    <div class="category-card crime">
+                        <span>🔍</span>
+                        <p>True Crime</p>
+                    </div>
+                    <div class="category-card comedy">
+                        <span>😂</span>
+                        <p>Comedy</p>
+                    </div>
+                    <div class="category-card technology">
+                        <span>💻</span>
+                        <p>Technology</p>
+                    </div>
+                    <div class="category-card news">
+                        <span>📰</span>
+                        <p>News</p>
+                    </div>
+                    <div class="category-card science">
+                        <span>🔬</span>
+                        <p>Science</p>
+                    </div>
+                    <div class="category-card business">
+                        <span>💼</span>
+                        <p>Business</p>
+                    </div>
+                    <div class="category-card health">
+                        <span>🧘</span>
+                        <p>Health</p>
+                    </div>
+                    <div class="category-card society">
+                        <span>🌎</span>
+                        <p>Society</p>
+                    </div>
+                </div>
+                <h2 class="charts-heading">Top Charts</h2>
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <span class="rank">1</span>
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=200&h=200&fit=crop">
+                        <div class="chart-text">
+                            <strong>The Daily Tech</strong>
+                            <p>Sarah Chen</p>
+                        </div>
+                        <div class="chart-number">
+                            <span>1.2M</span>
+                            <small>245 eps</small>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <span class="rank">2</span>
+                        <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=200&h=200&fit=crop">
+                        <div class="chart-text">
+                            <strong>Mystery Files</strong>
+                            <p>Detective Audio</p>
+                        </div>
+                        <div class="chart-number">
+                            <span>2.5M</span>
+                            <small>189 eps</small>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <span class="rank">3</span>
+                        <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=200&h=200&fit=crop">
+                        <div class="chart-text">
+                            <strong>Laugh Track</strong>
+                            <p>Comedy Central</p>
+                        </div>
+                        <div class="chart-number">
+                            <span>890K</span>
+                            <small>312 eps</small>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <span class="rank">4</span>
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=200&h=200&fit=crop">
+                        <div class="chart-text">
+                            <strong>Science Unlocked</strong>
+                            <p>Dr. Maya Williams</p>
+                        </div>
+                        <div class="chart-number">
+                            <span>750K</span>
+                            <small>156 eps</small>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <span class="rank">5</span>
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=200&h=200&fit=crop">
+                        <div class="chart-text">
+                            <strong>Morning Briefing</strong>
+                            <p>Global News Network</p>
+                        </div>
+                        <div class="chart-number">
+                            <span>3.1M</span>
+                            <small>520 eps</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="library-page">
+                <h1>Your Library</h1>
+                <div class="library-tabs">
+                    <button class="library-tab active-library-tab" data-library-tab="subscribed">
+                        Subscribed Shows
+                    </button>
+                    <button class="library-tab" data-library-tab="saved">
+                        Saved Episodes
+                    </button>
+                    <button class="library-tab" data-library-tab="history">
+                        History
+                    </button>
+                </div>
+                <div class="library-content subscribed-content">
+                    <div class="library-show-container">
+                        <div class="library-show-card">
+                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&amp;h=400&amp;fit=crop">
+                            <h2>The Daily Tech</h2>
+                            <p>Sarah Chen</p>
+                        </div>
+                        <div class="library-show-card">
+                            <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=400&amp;h=400&amp;fit=crop">
+                            <h2>Mystery Files</h2>
+                            <p>Detective Audio</p>
+                        </div>
+                        <div class="library-show-card">
+                            <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&amp;h=400&amp;fit=crop">
+                            <h2>Laugh Track</h2>
+                            <p>Comedy Central</p>
+                        </div>
+                        <div class="library-show-card">
+                            <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&amp;h=400&amp;fit=crop">
+                            <h2>Science Unlocked</h2>
+                            <p>Dr. Maya Williams</p>
+                        </div>
+                        <div class="library-show-card">
+                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&amp;h=400&amp;fit=crop">
+                            <h2>Morning Briefing</h2>
+                            <p>Global News Network</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-content saved-content">
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>The AI Revolution: What's Next?</strong>
+                            <p>The Daily Tech</p>
+                            <span>2024-01-15 &nbsp; ◷ 45:32</span>
+                        </div>
+                        <div class="episode-progress progress-one"></div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>Apple Vision Pro: First Impressions</strong>
+                            <p>The Daily Tech</p>
+                            <span>2024-01-12 &nbsp; ◷ 38:15</span>
+                        </div>
+                        <div class="episode-progress progress-two"></div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>The Disappearance of Flight 370</strong>
+                            <p>Mystery Files</p>
+                            <span>2024-01-14 &nbsp; ◷ 52:48</span>
+                        </div>
+                        <div class="episode-progress progress-three"></div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>Comedy Gold: Best of 2023</strong>
+                            <p>Laugh Track</p>
+                            <span>2024-01-10 &nbsp; ◷ 01:02:30</span>
+                        </div>
+                        <div class="episode-progress progress-four"></div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>The James Webb Telescope: New Discoveries</strong>
+                            <p>Science Unlocked</p>
+                            <span>2024-01-13 &nbsp; ◷ 41:20</span>
+                        </div>
+                        <div class="episode-progress progress-five"></div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>Global Markets Update: January 2024</strong>
+                            <p>Morning Briefing</p>
+                            <span>2024-01-15 &nbsp; ◷ 28:45</span>
+                        </div>
+                        <div class="episode-progress progress-six"></div>
+                    </div>
+                </div>
+                <div class="library-content history-content">
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>The Disappearance of Flight 370</strong>
+                            <p>Mystery Files</p>
+                            <span>2024-01-14 &nbsp; ◷ 52:48</span>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>Comedy Gold: Best of 2023</strong>
+                            <p>Laugh Track</p>
+                            <span>2024-01-10 &nbsp; ◷ 01:02:30</span>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>The James Webb Telescope: New Discoveries</strong>
+                            <p>Science Unlocked</p>
+                            <span>2024-01-13 &nbsp; ◷ 41:20</span>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>Global Markets Update: January 2024</strong>
+                            <p>Morning Briefing</p>
+                            <span>2024-01-15 &nbsp; ◷ 28:45</span>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>From Garage to $10B: The Stripe Story</strong>
+                            <p>Startup Stories</p>
+                            <span>2024-01-11 &nbsp; ◷ 55:12</span>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&amp;h=400&amp;fit=crop">
+                        <div class="episode-text">
+                            <strong>10-Minute Morning Meditation</strong>
+                            <p>Mindful Moments</p>
+                            <span>2024-01-15 &nbsp; ◷ 12:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-page">
+                <h1>Settings</h1>
+                <p class="settings-subtitle">Customize your Echo experience</p>
+                <h2>Account</h2>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Profile</strong>
+                        <p>Manage your account settings</p>
+                    </div>
+                </div>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Notifications</strong>
+                        <p>Control your notification preferences</p>
+                    </div>
+                    <div class="toggle active-toggle" id="notificationToggle">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+                <h2>Playback</h2>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Audio Quality</strong>
+                        <p>High quality streaming</p>
+                    </div>
+                </div>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-regular fa-moon"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Sleep Timer</strong>
+                        <p>Auto-pause after set time</p>
+                    </div>
+                </div>
+                <h2>Privacy & Support</h2>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Privacy</strong>
+                        <p>Manage your data and privacy</p>
+                    </div>
+                </div>
+                <div class="settings-card">
+                    <div class="settings-icon">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                    <div class="settings-text">
+                        <strong>Help & Support</strong>
+                        <p>Get help with Echo</p>
+                    </div>
+                </div>
+                <div class="sign-out-card">
+                    <div class="sign-out-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div class="sign-out-text">
+                        Sign Out
+                    </div>
+                </div>
+                <div class="settings-footer">
+                    Echo v1.0.0 • Made with 💜
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="daily-tech-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img class="podcast-detail-cover" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop" alt="The Daily Tech">
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">Technology</span>
+                                <h1>The Daily Tech</h1>
+                                <p class="detail-host">Sarah Chen</p>
+                                <div class="detail-stats">
+                            <span>
+                                <i class="fa-regular fa-user"></i>
+                                1.2M subscribers
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-headphones"></i>
+                                245 episodes
+                            </span>
+                            </div>
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+                                <button type="button" class="detail-share" aria-label="Share The Daily Tech">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-daily-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-daily-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="daily-episodes" id="daily-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    The AI Revolution: What's Next?
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    The Daily Tech · 2024-01-15 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    45:32
+                                </span>
+                            </span>
+                        </div>
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                2
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    Apple Vision Pro: First Impressions
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    The Daily Tech · 2024-01-12 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    38:15
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="daily-about" id="daily-about">
+                        <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Your daily dose of technology news, trends, and insights
+                            from Silicon Valley and beyond. Join us as we explore the
+                            latest innovations shaping our digital future.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Sarah Chen
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="mystery-files-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img class="podcast-detail-cover" src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?w=400&h=400&fit=crop" alt="Mystery Files">
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">
+                                True Crime
+                            </span>
+                            <h1>Mystery Files</h1>
+                            <p class="detail-host">
+                                Detective Audio
+                            </p>
+                            <div class="detail-stats">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
+                                    2.5M subscribers
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-headphones"></i>
+                                    189 episodes
+                                </span>
+                            </div>
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+                                <button type="button" class="detail-share" aria-label="Share Mystery Files">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-mystery-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-mystery-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="mystery-episodes" id="mystery-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    The Disappearance of Flight 370
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    Mystery Files · 2024-01-14 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    52:48
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mystery-about" id="mystery-about">
+                        <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Dive deep into unsolved mysteries, cold cases,
+                            and fascinating criminal investigations.
+                            Each episode unravels a new puzzle.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Detective Audio
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="laugh-track-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img class="podcast-detail-cover" src="https://images.unsplash.com/photo-1527224538127-2104bb71c51b?w=400&h=400&fit=crop" alt="Laugh Track">
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">
+                                Comedy
+                            </span>
+                            <h1>
+                                Laugh Track
+                            </h1>
+                            <p class="detail-host">
+                                Comedy Central
+                            </p>
+                            <div class="detail-stats">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
+                                    890K subscribers
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-headphones"></i>
+                                    312 episodes
+                                </span>
+                            </div>
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+                                <button type="button" class="detail-share" aria-label="Share Laugh Track">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-laugh-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-laugh-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="laugh-episodes" id="laugh-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    Comedy Gold: Best of 2023
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    Laugh Track · 2024-01-10 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    1:02:30
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="laugh-about" id="laugh-about">
+                        <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Stand-up highlights, comedy sketches, and hilarious
+                            conversations with the funniest people in entertainment.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Comedy Central
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="science-unlocked-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img class="podcast-detail-cover" src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&h=400&fit=crop" alt="Science Unlocked">
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">
+                                Science
+                            </span>
+                            <h1>
+                                Science Unlocked
+                            </h1>
+                            <p class="detail-host">
+                                Dr. Maya Williams
+                            </p>
+                            <div class="detail-stats">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
+                                    750K subscribers
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-headphones"></i>
+                                    156 episodes
+                                </span>
+                            </div>
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+                                <button
+                                    type="button"
+                                    class="detail-share"
+                                    aria-label="Share Science Unlocked">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-science-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-science-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="science-episodes" id="science-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    The James Webb Telescope: New Discoveries
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    Science Unlocked · 2024-01-13 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    41:20
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="science-about" id="science-about">
+                         <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Breaking down complex scientific concepts into
+                            fascinating stories. From quantum physics to
+                            evolutionary biology.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Dr. Maya Williams
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="morning-briefing-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img
+                            class="podcast-detail-cover"
+                            src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=400&fit=crop"
+                            alt="Morning Briefing"
+                        >
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">
+                                News
+                            </span>
+                            <h1>
+                                Morning Briefing
+                            </h1>
+                            <p class="detail-host">
+                                Global News Network
+                            </p>
+                            <div class="detail-stats">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
+                                    3.1M subscribers
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-headphones"></i>
+                                    520 episodes
+                                </span>
+                            </div>
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+
+                                <button type="button" class="detail-share" aria-label="Share Morning Briefing">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-morning-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-morning-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="morning-episodes" id="morning-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    Global Markets Update: January 2024
+                                </strong>
+                                <span class="detail-episode-meta">
+                                    Morning Briefing · 2024-01-15 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    28:45
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="morning-about" id="morning-about">
+                        <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Start your day informed with comprehensive news
+                            coverage from around the world.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Global News Network
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="podcast-detail-page" id="startup-stories-page">
+                <div class="podcast-detail-hero">
+                    <a href="#" class="detail-back">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        Back
+                    </a>
+                    <div class="podcast-detail-heading">
+                        <img class="podcast-detail-cover" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=400&fit=crop" alt="Startup Stories" >
+                        <div class="podcast-detail-info">
+                            <span class="detail-category">
+                                Business
+                            </span>
+                            <h1>
+                                Startup Stories
+                            </h1>
+                            <p class="detail-host">
+                                Venture Voice
+                            </p>
+                            <div class="detail-stats">
+                                <span>
+                                    <i class="fa-regular fa-user"></i>
+                                    420K subscribers
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-headphones"></i>
+                                    98 episodes
+                                </span>
+                            </div>
+
+                            <div class="detail-actions">
+                                <button type="button" class="detail-latest">
+                                    <i class="fa-solid fa-play"></i>
+                                    Latest Episode
+                                </button>
+                                <button type="button" class="detail-subscribe">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Subscribe
+                                </button>
+                                <button type="button" class="detail-share" aria-label="Share Startup Stories">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-tabs">
+                    <button type="button" class="detail-tab is-active" data-startup-tab="episodes">
+                        Episodes
+                    </button>
+                    <button type="button" class="detail-tab" data-startup-tab="about">
+                        About
+                    </button>
+                </div>
+                <div class="detail-content">
+                    <div class="startup-episodes" id="startup-episodes">
+                        <div class="detail-episode">
+                            <span class="detail-episode-number">
+                                1
+                            </span>
+                            <span>
+                                <strong class="detail-episode-title">
+                                    From Garage to $10B: The Stripe Story
+                                  </strong>
+                                <span class="detail-episode-meta">
+                                    Startup Stories · 2024-01-11 ·
+                                    <i class="fa-regular fa-clock"></i>
+                                    55:12
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="startup-about" id="startup-about">
+                        <h2>
+                            About this show
+                        </h2>
+                        <p class="detail-description">
+                            Behind-the-scenes stories from founders who built
+                            billion-dollar companies.
+                        </p>
+                        <h2>
+                            Host
+                        </h2>
+                        <div class="detail-host-card">
+                            <div class="detail-host-avatar"></div>
+                            <div>
+                                <strong>
+                                    Venture Voice
+                                </strong>
+                                <br>
+                                <span class="detail-description">
+                                    Creator &amp; Host
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="audio-player">
+        <div class="player-left">
+            <img id="playerImage"
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop">
+            <div class="player-info">
+                <strong id="playerTitle">
+                    The AI Revolution: What's Next?
+                </strong>
+                <p id="playerArtist">
+                    The Daily Tech
+                </p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button type="button" aria-label="Previous episode">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button type="button" class="play-pause-button" aria-label="Play" aria-pressed="false">
+                <i class="fa-solid fa-play play-icon"></i>
+                <i class="fa-solid fa-pause pause-icon"></i>
+            </button>
+            <button type="button" aria-label="Next episode">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+        </div>
+        <div class="player-right">
+            <i class="fa-solid fa-volume-low"></i>
+            <input type="range" value="70">
+            <button type="button" class="expand-button" aria-label="Expand player">
+                <i class="fa-solid fa-expand"></i>
+            </button>
+        </div>
+    </div>
+        <div class="full-player" id="fullPlayer">
+            <div class="full-player-top">
+                <button type="button" class="close-player-button" aria-label="Close player">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="full-player-top-right">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="full-player-content">
+                <img id="fullPlayerImage"
+                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop">
+                <h1 id="fullPlayerTitle">
+                    The AI Revolution: What's Next?
+                </h1>
+                <p id="fullPlayerArtist">
+                    The Daily Tech
+                </p>
+                <div class="full-progress">
+                    <input type="range" value="0">
+                    <div class="full-time">
+                        <span>0:00</span>
+                        <span>45:32</span>
+                    </div>
+                </div>
+                <div class="full-controls">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <button type="button" class="full-play-pause-button" aria-label="Play" aria-pressed="false">
+                        <i class="fa-solid fa-play full-play-icon"></i>
+                        <i class="fa-solid fa-pause full-pause-icon"></i>
+                    </button>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="full-bottom-controls">
+                    <span>1x</span>
+                    <i class="fa-solid fa-volume-low"></i>
+                    <input type="range" value="70">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+            </div>
+        </div>
+    <script src="echo.js"></script>
+</body>
+
+</html>
